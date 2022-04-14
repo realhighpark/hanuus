@@ -6,7 +6,7 @@ a{
 }
 h1{
     word-break : keep-all;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 h2{
@@ -21,7 +21,7 @@ h3{
 }
 h4{
     word-break : keep-all;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 500;
     width:80%;
     margin:0.8rem auto 0 auto;
@@ -31,12 +31,12 @@ h4{
 }
 h5{
     word-break : keep-all;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     font-weight: 500;
 }
 h6{
     word-break : keep-all;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 600;
 }
 
@@ -53,13 +53,16 @@ h6{
     margin: 30px auto 6px auto;
     border-radius:14px;
     color: #fcfcfc;
-    background: #333333;    
+    background: url(../img/main.png);
+    background-size:cover;
+    background-position:50%;  
     position: relative;
 }
 .mainbox h6{
     position: absolute;
     bottom:0;
 }
+
 
 
 .easyjoin{
