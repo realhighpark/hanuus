@@ -39,7 +39,8 @@ span{
     word-break : keep-all;
     width:90%;
     font-weight:500;
-    padding-left:1rem;
+    padding-left:0.5rem;
+    padding-right:0.5rem;
     font-size: 0.75rem;
     color: #6b6b6b;
 }
@@ -74,16 +75,51 @@ b{
     position: absolute;
     bottom:0;
     background: #ea5413;
-    border-radius: 12px;
-    padding:4px 8px 5px 8px;
+    border-radius: 18px;
+    padding:6px 16px 7px 16px;
+}
+/* 박스 1 */
+.subbox{
+    width:90%;
+    margin:0.8rem auto 0 auto; 
+    padding-left:1rem;   
+    background: #f5f5f5;
+    border-radius : 12px;
+    display:flex;
+}
+.subbox h5{
+    color:#6b6b6b;
+    width:80%;
+    justify-content:flex-start;
+}
+.subbox h5 b {
+    color:#202020;
+    font-size: 0.9rem;
+    font-weight: 500;
 }
 
+.subbox .imgbox{
+    background:url(../img/boximg1.png);
+    width:100px;
+    height:100px;
+    margin-right:1rem;
+    background-size:cover;
+    background-position: 50%;
+    justify-content:flex-end;
+}
 /* 간편가입 */
+.easyline{
+    width:90%;
+    height: 20vh;
+    border-radius: 12px;
+    border: 1px solid #d7d7d7;
+    margin: 20px auto 0 auto;
+}
 .easyjoin{
     width:100%;
     height: 14vh;
     text-align:center;
-    margin: 40px auto 0 auto;
+    margin: 20px auto 0 auto;
 }
 .easyjoin .button{
     width:80%;
@@ -104,6 +140,25 @@ b{
     width:90%;
     margin:40px auto -10px auto;
 }
+
+.ca{
+    margin: 20px auto;
+    width:90%;
+    height:14px;
+    display:flex;
+    justify-content:center;
+}
+.ca .cat{
+    margin-left:12px;
+    margin-right:12px;
+    margin-top:-5px;
+    color:#6b6b6b;
+}
+.ca hr{
+    width:40%;
+    border:1px solid #d7d7d7;
+}
+
 /* 건축사 회원가입 */
 .join{
     width:90%;
@@ -122,8 +177,8 @@ b{
     text-align:center;
 }
 
+/* 다크모드 */
 @media (prefers-color-scheme: dark) {
-    /* 다크모드 */
     body{
         background:#202020;
         color: #e2e2e2;
@@ -141,14 +196,72 @@ b{
         background:#CF4A11;
         color:#fafafa;
     }
+    .subbox{
+        background: #444;
+    }
+    .subbox h5{
+        color:#b9b9b9;
+    }
+    .subbox h5 b{
+        color : #fafafa;
+    }
+    .easyline{
+        border: 1px solid #6b6b6b;
+    }
+    .ca .cat{
+        color:#d7d7d7;
+    }
+    .ca hr{
+        border:1px solid #444;
+    }
     .join{
         background: #CF4A11;
         color:#fafafa;
     }
 }
-@media all and (min-width: 768px) {
+/* 반응형 테블릿 사이즈 */
+@media all and (min-width: 480px) and (max-width:1023px) {
+    .container {
+        display:flex;
+    }
+    .barea1{
+        width: 60vw;
+    }
+    .barea2{
+        width: 40vw;
+    }
+    .mainbox{
+        height:50vh;
+        margin-top:20px;
+    }
+    .easyline{
+        height: 160px;
+    }
     .join{
-        background: skyblue;
-        color:#fafafa;
+        height: 80px;
+    }
+}
+
+@media all and (min-width: 1024px) {
+    .container {
+        width:1080px;
+        margin: 60px auto 0 auto;
+        display:flex;
+    }
+    .barea1{
+        width: 60vw;
+    }
+    .barea2{
+        width: 40vw;
+    }
+    .mainbox{
+        height:50vh;
+        margin-top:20px;
+    }
+    .easyline{
+        height: 160px;
+    }
+    .join{
+        height: 80px;
     }
 }
