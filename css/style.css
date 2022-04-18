@@ -39,8 +39,6 @@ span{
     word-break : keep-all;
     width:90%;
     font-weight:500;
-    padding-left:0.5rem;
-    padding-right:0.5rem;
     font-size: 0.75rem;
     color: #6b6b6b;
 }
@@ -82,7 +80,7 @@ b{
     bottom:0;
     background: #ea5413;
     border-radius: 18px;
-    margin-bottom:0.5rem;
+    margin-bottom:0.75rem;
     padding:6px 16px 7px 16px;
 }
 /* 박스 1 */
@@ -110,6 +108,7 @@ b{
     width:100px;
     height:100px;
     margin-right:1rem;
+    margin-left:0.5rem;
     background-size:cover;
     background-position: 50%;
     justify-content:flex-end;
@@ -117,7 +116,7 @@ b{
 /* 간편가입 */
 .easyline{
     width:90%;
-    height: 20vh;
+    height: 22vh;
     border-radius: 12px;
     border: 1px solid #d7d7d7;
     margin: 20px auto 0 auto;
@@ -130,22 +129,22 @@ b{
 }
 .easyjoin .button{
     width:80%;
-    height:8vh;
-    margin:1rem auto 0 auto;
+    height:42px;
+    margin:1rem auto 0.5rem auto;
     display:flex;
     justify-content:center;
 }
 .easyjoin h3{
     margin-top: 8px;
-    margin-bottom:2px;
+    margin-bottom:8px;
 }
-
 .easyjoin .button a{
     margin: 0 0.5rem;
 }
-.pt{
-    width:90%;
-    margin:40px auto -10px auto;
+.easyjoin span{
+    width:100%;
+    margin-top:-8px;
+    text-align:center;
 }
 
 .ca{
@@ -160,6 +159,7 @@ b{
     margin-right:12px;
     margin-top:-5px;
     color:#6b6b6b;
+    font-size: 0.75rem;
 }
 .ca hr{
     width:40%;
@@ -173,7 +173,7 @@ b{
     display:flex;
     justify-content: center;
     align-items:center;
-    margin: 18px auto 0 auto;
+    margin: 8px auto 0 auto;
     border-radius:12px;
     color: #fcfcfc;
     background:#ea5413;
@@ -240,9 +240,13 @@ b{
     .mainbox{
         height:50vh;
         margin-top:20px;
+        padding:1.5rem;
+    }
+    .mainbox h6{
+        margin-bottom:1.5rem;
     }
     .easyline{
-        height: 160px;
+        height: 170px;
     }
     .join{
         height: 80px;
@@ -264,6 +268,7 @@ b{
     .mainbox{
         height:50vh;
         margin-top:20px;
+        padding: 2rem;
     }
     .mainbox h1{
         font-size:2rem;
@@ -275,10 +280,10 @@ b{
     }
     .mainbox h6{
         font-size: 1rem;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
     }
     .easyline{
-        height: 160px;
+        height: 170px;
     }
     .join{
         height: 80px;
