@@ -183,6 +183,48 @@ b{
     margin:auto;
     text-align:center;
 }
+.lt2{
+    width:90%;
+    margin:auto;
+    text-align:center;
+}
+.lt2 span{
+    color: #999;
+}
+/* .plus{
+    width:90%;
+    height:60px;
+    margin: 18px auto 0 auto;
+    display:flex;
+    justify-content:space-between;
+}
+.plus a {
+    width:48%;
+    height:60px;
+    border:#f1f1f5 1px solid;
+    border-radius: 12px;
+    background: url(../img/youtube.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center;
+    position:relative;
+}
+.plus .kakao{
+    background:url(../img/kakaoch.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center;
+} */
+/* .plus .kakao h6{
+    width:90%;
+    font-weight:1200;
+    text-align:center;
+    position:absolute;
+    bottom:0;
+    left:50%;
+    transform: translate(-50%, 0%);
+    margin-bottom:2px;
+} */
 
 /* 다크모드 */
 @media (prefers-color-scheme: dark) {
@@ -225,6 +267,7 @@ b{
         background: #CF4A11;
         color:#fafafa;
     }
+    
 }
 /* 반응형 테블릿 사이즈 */
 @media all and (min-width: 480px) and (max-width:1023px) {
@@ -246,7 +289,7 @@ b{
         margin-bottom:1.5rem;
     }
     .easyline{
-        height: 170px;
+        height: 190px;
     }
     .join{
         height: 80px;
@@ -283,7 +326,7 @@ b{
         margin-bottom: 2rem;
     }
     .easyline{
-        height: 170px;
+        height: 200px;
     }
     .join{
         height: 80px;
